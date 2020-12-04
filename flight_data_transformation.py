@@ -1,3 +1,5 @@
+## This file is compilation of notebook Flight_data_transformation.ipynb to to facilitate the process of data transformation
+
 import random
 import pandas as pd
 import numpy as np
@@ -47,7 +49,7 @@ def _time_transformation(time):
         hours = 0
     hours_minutes = datetime.time(hours,minutes)
     return hours_minutes
-def get_holidays():
+def _get_holidays():
     holidays_dates = list()
     URL = 'https://www.officeholidays.com/countries/usa/2015'
     response = requests.get(URL, timeout=20)
@@ -81,7 +83,7 @@ def flight_data_transformer(data):
     Flights_Delays_Combined['DayOfWeek'] = Flights_Delays_Combined['DATE'].apply(date.weekday)
     Flights_Delays_Combined = Flights_Delays_Combined.drop(['YEAR','MONTH','DAY','DAY_OF_WEEK'], axis=1)
 
-    holidays_dates = get_holidays()
+    holidays_dates = _get_holidays()
    
 
     Flights_Delays_Combined['Holidays'] = np.where(Flights_Delays_Combined['DATE'].isin(holidays_dates), 1, 0)
