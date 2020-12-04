@@ -6,9 +6,17 @@ This project is made to analyse, understand and make model of Flight Delays Data
 - Understanding data ✅
 - Analysing data ✅
 -  Plotting data in depend of:
-    - airport
-    - airline
-    - plane type
-- Feature engineering
-- Modeling data
-- Finding best algorithm
+    - airport ✅
+    - airline ✅
+- Feature engineering✅
+- Modeling data ✅
+- Finding best algorithm ✅
+
+## Requirements
+* random
+* pandas
+* numpy
+* matplotlib
+* seaborn
+* datetime
+* sklearn
