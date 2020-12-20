@@ -3,7 +3,7 @@ This project is made to analyse, understand and make model of Flight Delays Data
 
 ## Files description
 Project consists of 4 files. 
-1) Flight_data_transformation.ipynb - Jupyter Notebook that contains data understanding, and data manipulation
+1) **main_Flight_data_transformation.ipynb** - Jupyter Notebook that contains data understanding, and data manipulation
 2) Flights_data_visualization.ipynb - Jupyter Notebook that constains visualizaiton of data. It includes charts, tables and other required for data interpretation.
 3) Flights_delays.ipynb - Jupyter Notebook that have modeling data and mashine learning alogirthms to predict delation of flights
 4) flight_data_transformation.py - Python file that constains functions from Flight_data_transformation.ipynb notebook 
